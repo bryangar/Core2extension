@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    // Taking the result back from the previous activity
 
     val startForResult =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result ->
@@ -68,12 +69,13 @@ class MainActivity : AppCompatActivity() {
                 RESULT_OK -> {
                     val data = result.data
                     val place = data?.getParcelableExtra<Location>("place")
-                    //val bundle: Bundle? = intent.extras
-                    //val resId: Int = (bundle?.getInt("resId") ?: "resId") as Int
+
+
 
                     Log.i("RESULT","onCreation $place")
                     place?.let{
                         Log.i("RESULT","onCreation ${it.place}")
+                        //Check which of the picture has been updated
                         if( it.id == 2) {
                             val vplace = findViewById<TextView>(R.id.madrid)
                             vplace.text = it.place
