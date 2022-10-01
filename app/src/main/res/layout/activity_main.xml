@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25">
+
+            <ImageView
+                style="@style/city"
+                android:id="@+id/spa"
+                android:layout_width="208dp"
+                android:layout_height="318dp"
+                app:srcCompat="@drawable/spain" />
+
+            <ImageView
+                style="@style/beach"
+                android:id="@+id/mal"
+                android:layout_width="208dp"
+                android:layout_height="318dp"
+                app:srcCompat="@drawable/valleta" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/city"
+                android:id="@+id/madrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/madrid" />
+
+            <TextView
+                style="@style/beach"
+                android:id="@+id/malta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/malta" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/city"
+                android:id="@+id/rating1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ratingspa" />
+
+            <TextView
+                style="@style/beach"
+                android:id="@+id/rating2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ratingmal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="250">
+
+            <ImageView
+                style="@style/beach"
+                android:id="@+id/it"
+                android:layout_width="208dp"
+                android:layout_height="318dp"
+                app:srcCompat="@drawable/italy" />
+
+            <ImageView
+                style="@style/city"
+                android:id="@+id/col"
+                android:layout_width="208dp"
+                android:layout_height="318dp"
+                app:srcCompat="@drawable/colombia" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/beach"
+                android:id="@+id/naples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/naples" />
+
+            <TextView
+                style="@style/city"
+                android:id="@+id/armenia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/armenia" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/beach"
+                android:id="@+id/rating3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ratingit" />
+
+            <TextView
+                style="@style/city"
+                android:id="@+id/rating4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ratingcol" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
